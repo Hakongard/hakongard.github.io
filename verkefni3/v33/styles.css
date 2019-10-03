@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 1em auto;
+    max-width: 60em;
+   background-color:#ddd;
+   font-family: 'Nunito', sans-serif;
+   background-color:black;
+}
+h2,h3{  
+    font-family: 'Roboto Slab', serif;
+}
+h1 {
+    font-size: 7em;   
+    font-family: 'Asset', cursive;
+    padding: 0;
+    margin: 0;
+}
+header{
+    text-align:left;
+    color: #ff5a09;
+}
+
+.haus{
+    grid-area: haus;
+}
+    
+.topnav{
+    grid-area: topnav;
+}
+.content{
+    grid-area: content;
+}
+.foot{
+    grid-area: foot;
+    display: grid;
+    grid-template-columns: repeat(4,25%)
+}
+
+
+.as1{
+    grid-area: as1;
+}
+.as2{
+    grid-area: as2;
+}
+.art1{
+    grid-area: art1;
+}
+
+.container{
+   display: grid;
+grid-template-areas: 
+     "haus"   
+     "topmenu" 
+     "topnav"
+     "content"
+     "foot";
+}
+.content{
+    display: grid;
+    grid-gap:0em;
+    grid-template-areas: 
+       "art1"
+       "as2 "
+       "as1";
+    grid-template-columns: 5fr;
+}
+
+.topmenu, .foot{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    background-color:#ff5a09;
+}
+.topmenu li{
+    list-style-type: none;
+    
+}
+.foot,.content.container,.topmenu{
+    border: 1px solid black;
+}
+.art1,.as1,.as2{
+    padding: 1em;
+    color:#b6b6b6;
+}
+.art1{
+    background-color:#202020;
+}
+.as1,.as2{
+    background-color: #202020;
+}
+.haus{
+    text-align: center;
+}
+.topmenu li {
+    list-style-type: none;   
+}
+.topmenu li a{
+    text-decoration: none;
+    color:black;
+    }
+    .foot p a{
+        text-decoration: none;
+        color: black;    
+        }

@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0 auto;
+    max-width: 60em;
+   font-family: 'Rajdhani', sans-serif;
+   background-color:#202020;
+}
+h2,h3{  
+    font-family: 'Shojumaru', cursive;
+    color: rgb(40, 98, 134);
+    font-size: 2em;
+}
+h1 {
+    font-size: 10em;   
+    font-family: 'Shojumaru', cursive;
+    padding: 0;
+    margin: 0;
+}
+header{
+    text-align:center;
+    color: rgb(40, 98, 134);
+    font-family: 'Shojumaru', cursive;
+}
+
+.haus{
+    grid-area: haus;
+}
+    
+.topnav{
+    grid-area: topnav;
+    padding: 1em;
+}
+.content{
+    grid-area: content;
+}
+.foot{
+    grid-area: foot;
+    display: grid;
+    grid-template-columns: repeat(4,25%)
+}
+
+
+.as1{
+    grid-area: as1;
+}
+.as2{
+    grid-area: as2;
+}
+.art1{
+    grid-area: art1;
+}
+
+.container{
+   display: grid;
+grid-template-areas: 
+    "foot"
+     "topnav "  
+     "haus"
+     "content"
+     ;
+}
+.content{
+    display: grid;
+    grid-gap:3em;
+    grid-template-areas: 
+       "as2 art1 as1";
+        
+    grid-template-columns: 2fr 2fr 2fr;
+}
+
+.topmenu, .foot{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif; 
+}
+.topmenu li {
+    list-style-type: none;   
+}
+.topmenu li a{
+    text-decoration: none;
+    color:white;    
+}
+
+
+.art1,.as1,.as2{
+    padding: 1em;
+    color:white;
+    border-style: double;
+    
+}
+
+.foot p a{
+    text-decoration: none;
+    color: white;
+}
+.foot p a:hover,
+.topmenu li a:hover{
+color:rgb(40, 98, 134);
+font-size: 1.5em;
+font-family: 'Shojumaru', cursive;
+}
