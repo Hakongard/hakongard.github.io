@@ -1,5 +1,9 @@
 # hakongard.github.io
 
+##2019 haust
+
+###efnisyfirlit
+
 
 1.[verkefni 1]
 
